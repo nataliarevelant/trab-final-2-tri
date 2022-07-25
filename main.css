@@ -980,3 +980,74 @@ p.fontes {
     position: absolute;
     top: -80px;
 }
+
+.chart-D3-o-segundo-turno {
+    margin-top: 5rem;
+}
+
+.chart-D3-o-segundo-turno > img {
+    width: 100%;
+}
+
+.chart-04 {
+    background-color: #ED6745;
+    width: 100%;
+    height: 50rem;
+}
+
+.chart-04 > .estrutura {
+    position: relative;
+}
+
+.chart-04 > .estrutura > img {
+    position: absolute;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.chart-04 > .resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.chart-04 > .resultado > .icone-bolsonaro {
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.chart-04 > .resultado > .icone-haddad {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.resultado .votos {
+    font-size: 1.4rem;
+    color: #f7f7f7;
+}
+
+div.sub-titulo {
+    background-color: #212121;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #f7f7f7;
+}
+
+section.sobre-segundo-turno {
+    background-color: #212121;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr 2fr 1fr 2fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    color: #f7f7f7;
+}
