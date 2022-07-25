@@ -79,22 +79,32 @@ div.analise-index > a{
     color: #858585;
 }
 
-.impar {
+div.impar {
     background-color: #2b2b2b;
     color: #f7f7f7;
     padding: 3rem;
 }
 
-.par {
+div.par {
     background-color: #333333;
     color: #f7f7f7;
     padding: 3rem;
 }
 
-.visual-tweets > .tweet-01 {
+div.impar.textual {
+    background-color: #f7f7f7;
+}
+
+.visual-tweets > .tweet {
     display: grid;
     grid-template-columns: 1fr 1fr 1.2fr 4fr;
     grid-template-rows: 2fr 4fr 2fr;
+}
+
+.tweet > .texto-icone {
+    grid-column: 3 / span 4;
+    grid-row: 2;
+    display: flex;
 }
 
 .button-texto-icone {
@@ -103,63 +113,78 @@ div.analise-index > a{
     place-self: center;
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;
+    gap: 20px;
 }
 
-.button-texto-icone > .button {
-    place-self: center;
-    width: 2rem;
-    height: 5rem;
+.button {
+    width: 12rem;
+    height: 3rem;
     border-radius: 20rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #2b2b2b;
+}
+
+.button.icone {
+    color: #f7f7f7;
     border: 2px solid #f7f7f7;
-    position: relative;
+    transition: all 0.8s ease-in-out;
 }
 
-.button-texto-icone > .button > .circle {
-    border-radius: 20rem;
-    width: 2rem;
-    height: 2rem;
-    background-color: #f7f7f7;
-    position: absolute;
-    top: -1px;
-    left: -2px;
-    transition: all 2s ease-in-out;
+.button.icone:hover {
+    cursor: pointer;
+
 }
 
-.circle .vai-para-texto {
-    position: absolute;
-    top: 45px;
-    left: -2px;
-}
-
-.button-texto-icone > p {
+.tweet > .texto-icone > img {
     place-self: center;
+    height: 4.5rem;
 }
 
-.tweet-01 > img.profile-pic {
+.tweet > .texto-icone > img.none{
+    display: none;
+}
+
+.button.texto {
+    color: #858585;
+    border: 2px solid #858585;
+    transition: all 0.8s ease-in-out;
+}
+
+.button.texto:hover {
+    cursor: pointer;
+}
+
+.tweet > .texto-icone > p {
+    place-self: center;
+    font-size: 1.8rem;
+    transition: all 1s ease-in-out;
+}
+
+.tweet > img.profile-pic {
     grid-column: 2;
     grid-row: 1;
     place-self: center right;
     margin-right: 1.5rem;
 }
 
-.tweet-01 > .profile-info {
+.tweet > .profile-info {
     grid-column: 3;
     grid-row: 1;
 }
 
-.tweet-01 > .profile-info > .nickname {
+.tweet > .profile-info > .nickname {
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.tweet-01 > .profile-info > .user {
+.tweet > .profile-info > .user {
     font-size: 1.3rem;
     font-weight: 500;
     color: #858585;
 }
 
-.tweet-01 > .other-info {
+.tweet > .other-info {
     grid-column: 4;
     grid-row: 1;
     display: flex;
@@ -167,32 +192,21 @@ div.analise-index > a{
     height: 30px;
 }
 
-.tweet-01 > .other-info > img {
+.tweet > .other-info > img {
     width: 3%;
     align-self: flex-start;
     margin-right: 0.5rem;
     align-self: center;
 }
 
-.tweet-01 > .other-info > .time-date {
+.tweet > .other-info > .time-date {
     font-size: 1rem;
     font-weight: 300;
     color: #858585;
     align-self: center;
 }
 
-.tweet-01 > .visual-icons {
-    grid-column: 3 / span 4;
-    grid-row: 2;
-    display: flex;
-}
-
-.tweet-01 > .visual-icons > img {
-    place-self: center;
-    height: 4.5rem;
-}
-
-.tweet-01 > .tweet-infos {
+.tweet > .tweet-infos {
     grid-column: 3 / span 4;
     grid-row: 3;
     display: inline-flex;
